@@ -63,7 +63,7 @@ MSc Computational Sciences – Laurentian University
 [Portfolio](https://prajapatiayush.vercel.app/) | [LinkedIn](https://linkedin.com/in/ayush-p-prajapati)
 
 ## 🌐 Live Demo
-Check out the live demo here: [https://svd-image-app.streamlit.app](https://svd-image-app.streamlit.app)
+Check out the live demo here: [https://svd-image-processing.streamlit.app](https://svd-image-processing.streamlit.app/)
 
 ## 📜 License
 This project is open source under the MIT License.
