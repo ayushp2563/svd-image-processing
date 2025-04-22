@@ -37,14 +37,61 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
+
+### 4. Run the Evulation Script:
+```bash
+python evaluate.py
+```
+
+
 ## 📁 Folder Structure
 ```
 .
 ├── main.py                       # Main Streamlit App
 ├── requirements.txt              # Python dependencies
+├── evaluate.py                   # Evaluation Script
 └── README.md                     # This file
 ```
 
+# Image Compression and Denoising Evaluation
+
+This script processes a batch of images and outputs the following:
+
+- **Compressed or Denoised Images**: Saved in the `output/` directory.
+- **Evaluation Summary**: A CSV file named `evaluation_summary.csv` containing performance metrics.
+
+## Output Details
+
+### 1. Processed Images
+
+All input images are processed using various compression or denoising methods. The resulting images are saved in the `output/` folder.
+
+### 2. Evaluation Summary (evaluation_summary.csv)
+
+This CSV file provides a summary of the evaluation for each processed image, including the following information:
+
+| Column Name   | Description                                      |
+|---------------|--------------------------------------------------|
+| image name    | Name of the original image file                  |
+| method used   | Compression or denoising method applied          |
+| PSNR          | Peak Signal-to-Noise Ratio of the result         |
+| SSIM          | Structural Similarity Index of the result        |
+| runtime       | Time taken to process the image (in seconds)     |
+
+## Example
+
+After running the script, you should see:
+
+- Processed image files inside `output/`
+- A summary CSV: `evaluation_summary.csv`
+
+## Usage
+
+To run the script, simply execute:
+
+```bash
+python evaluate.py
+```
 ## ✨ Screenshots
 ![UI Screenshot](assets/ui_demo.png)
 
